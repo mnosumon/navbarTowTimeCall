@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <nav className="bg-stone-300 relative">
-      <div className="flex items-center justify-around w-[90%] mx-auto py-4">
+      <div className="flex items-center justify-around md:justify-between w-[90%] mx-auto py-4">
         {/* Logo and Mobile Menu Toggle */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <h1 className="text-2xl font-semibold">Logo</h1>
@@ -30,6 +30,9 @@ const App = () => {
           <li className="hover:text-orange-500 cursor-pointer">Home</li>
           <li className="hover:text-orange-500 cursor-pointer">About</li>
           <li className="hover:text-orange-500 cursor-pointer">Earn</li>
+          <li className="hover:text-orange-500 cursor-pointer">Earn</li>
+          <li className="hover:text-orange-500 cursor-pointer">Earn</li>
+          <li className="hover:text-orange-500 cursor-pointer">Earn</li>
         </ul>
         <button className="hidden md:block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">
           Submit
@@ -44,6 +47,9 @@ const App = () => {
           <ul className="md:hidden w-[90%] mx-auto py-4 space-y-4 text-lg text-right">
             <li className="hover:text-orange-500 cursor-pointer">Home</li>
             <li className="hover:text-orange-500 cursor-pointer">About</li>
+            <li className="hover:text-orange-500 cursor-pointer">Earn</li>
+            <li className="hover:text-orange-500 cursor-pointer">Earn</li>
+            <li className="hover:text-orange-500 cursor-pointer">Earn</li>
             <li className="hover:text-orange-500 cursor-pointer">Earn</li>
             <div>
               <button className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">
