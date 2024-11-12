@@ -9,12 +9,19 @@ const App = () => {
         {/* Logo and Mobile Menu Toggle */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <h1 className="text-2xl font-semibold">Logo</h1>
+
           <button
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen(!open)}
-            className="text-2xl md:hidden z-50"
+            className="text-2xl md:hidden z-50 transition-all duration-500 ease-in-out"
           >
-            {open ? <FaTimes /> : <FaBars />}
+            <div
+              className={`transform ${
+                open ? "rotate-180 opacity-100" : "rotate-0 opacity-60"
+              } transition-all duration-500 ease-in-out`}
+            >
+              {open ? <FaTimes /> : <FaBars />}
+            </div>
           </button>
         </div>
 
@@ -34,7 +41,7 @@ const App = () => {
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <ul className="md:hidden w-[90%] mx-auto py-4 space-y-4 text-lg">
+          <ul className="md:hidden w-[90%] mx-auto py-4 space-y-4 text-lg text-right">
             <li className="hover:text-orange-500 cursor-pointer">Home</li>
             <li className="hover:text-orange-500 cursor-pointer">About</li>
             <li className="hover:text-orange-500 cursor-pointer">Earn</li>
